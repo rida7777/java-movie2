@@ -22,6 +22,14 @@ public class Movie {
         playSchedules.add(playSchedule);
     }
 
+    public boolean isRightMovie(int movieId) {
+    	return (id == movieId);
+    }
+    
+    public List<PlaySchedule> getPlaySchedules() {
+    	return playSchedules;
+    }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
