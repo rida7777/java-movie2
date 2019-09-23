@@ -22,12 +22,12 @@ public class InputView {
     	return InputUtil.getInt();
     }
     
-    public static int checkReservation() {
+    public static boolean checkExit() {
     	System.out.println("## 예약을 종료하고 결제를 하려면 1번, 추가 예약을 하시려면 2번을 입력하세요.");
-    	return InputUtil.getInt();
+    	return (InputUtil.getInt() != 1); 
     }
     
-    public static int proceedBuy() {
+    public static int intputPoint() {
     	System.out.println("## 결제를 진행합니다.");
     	System.out.println("## 포인트 사용금액을 입력하세요.");
     	return InputUtil.getInt();
